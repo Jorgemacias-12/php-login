@@ -27,7 +27,7 @@
 .navigation-bar .brand-container {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 50%;
 }
 
 .brand-container .brand-image {
@@ -39,6 +39,33 @@
 .brand-container .brand-title {
     color: white;
     margin-left: 15px;
+}
+
+.list-container {
+    width: 30%;
+}
+
+.list-container .list-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+.list-container .item-li {
+    margin: 0px 20px 0px 20px;
+}
+
+.list-container .link-a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.link-a:hover {
+    color: #ddd;
+    text-decoration: underline;
 }
 
 .search-container {
@@ -69,7 +96,7 @@
 .search-container .search-button {
     width: 56px;
     height: 36px;
-    background-color: #101D42;
+    background-color: #0353A5;
     border: 2px solid transparent;
     color: white;
     font-size: 16px;
