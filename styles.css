@@ -11,6 +11,7 @@
 
 .page-container {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
@@ -111,4 +112,26 @@
 
 .search-container .search-button:active {
     transform: scale(.9);
+}
+
+/* Styles for main content */
+
+.main-content {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #303030;
+    grid-template-columns: 25% 70%;
+    grid-template-rows: 95%;
+}
+
+.main-content .categories-content {
+    margin: 0px 50px 0px 0px;
+    background-color: #fafafa;
+}
+
+.main-content .products-grid {
+    background-color: #fafafa;
+    margin: 0px 15px 0px 15px;
 }
