@@ -1,4 +1,5 @@
 /* CSS defaults */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +15,8 @@
     height: 100vh;
 }
 
-
 /* Styles for the navigation bar and his childs*/
+
 .navigation-bar {
     display: flex;
     width: 100%;
@@ -42,7 +43,45 @@
 
 .search-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 20%;
+}
+
+.search-container .search-input {
+    outline: none;
+    height: 30px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    background-color: #202020;
+    color: white;
+}
+
+.search-container .search-input:hover {
+    border: 2px solid #3066BE;
+    transition: 0.5s background-color;
+}
+
+.search-container .search-input:focus {
+    border: 2px solid #3066BE;
+}
+
+.search-container .search-button {
+    width: 56px;
+    height: 36px;
+    background-color: #101D42;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-container .search-button:hover {
+    display: block;
+    background-color: #006DAA;
+    transition: 0.5s background-color;
+}
+
+.search-container .search-button:active {
+    transform: scale(.9);
 }
