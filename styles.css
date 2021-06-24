@@ -1,0 +1,48 @@
+/* CSS defaults */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: sans-serif, system-ui, arial;
+}
+
+/* Container of the page */
+
+.page-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Styles for the navigation bar and his childs*/
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #473198;
+}
+
+.navigation-bar .brand-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.brand-container .brand-image {
+    margin-left: 10px;
+    background-color: #323232;
+    border-radius: 50%;
+}
+
+.brand-container .brand-title {
+    color: white;
+    margin-left: 15px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 20%;
+}
