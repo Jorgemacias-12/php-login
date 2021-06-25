@@ -118,25 +118,19 @@
 
 .main-content {
     display: grid;
-    place-content: center;
+    justify-content: center;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: auto;
     background-color: #fff;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 95%;
+    overflow-x: hidden;
 }
 
 .main-content .categories-content {
+    grid-area: 'lateral-nav';
     margin: 0px 0px 0px 20px;
     background-color: #f7f7f7;
     border: 1px solid #ddd;
-    height: 50%;
-}
-
-.main-content .products-grid {
-    background-color: #f7f7f7;
-    margin: 0px 15px 0px 15px;
-    border: 2px solid #ddd;
+    height: auto;
 }
 
 .categories-content .categories-title {
@@ -161,7 +155,7 @@
 
 .categories-content .category {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     font-size: 14px;
     color: #666;
@@ -186,4 +180,96 @@
 .category .category-icon {
     margin: 0px 15px 0px 15px;
     font-size: 22px;
+}
+
+.products-section-title {
+    grid-area: 'title';
+}
+
+.main-content .products {
+    grid-area: 'content';
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin: 0px 15px 0px 15px;
+}
+
+.products .product-title {
+    width: 100%;
+}
+
+.product-title .page-title {
+    height: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.products {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+}
+
+.products .product {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.text-container .product-title {
+    margin-bottom: 20px;
+}
+
+.text-container .product-about {
+    margin-bottom: 5px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.button-container .button {
+    cursor: pointer;
+    height: 35px;
+    width: 90px;
+    background-color: #5cb85c;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.button-container .button:hover {
+    background-color: #fff;
+    border: 2px solid #5cb85c;
+    color: #101010;
+    transition: 0.4s all;
+}
+
+.button-container .button:active {
+    transform: scale(.9);
 }
