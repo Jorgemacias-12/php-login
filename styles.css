@@ -210,28 +210,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0px 15px 0px 15px;
-}
-
-.products .product-title {
-    width: 100%;
-}
-
-.product-title .page-title {
-    height: 100%;
-    text-align: center;
-    margin-top: 15px;
-}
-
-.products {
-    width: 100%;
-    margin-top: 20px;
-    display: grid;
-    grid-area: "content";
-    place-items: center;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #f7f7f7;
-    border: 2px solid #ddd;
+    margin: 15px 0px 15px 0px;
 }
 
 .products-grid .product {
@@ -245,10 +224,8 @@
 }
 
 .products-grid .product:hover {
-    transform: scale(1.1);
     cursor: pointer;
-    border: 1px solid #bb2929;
-    transition: 0.2s all;
+    outline: 2px solid #0353A5;
 }
 
 .text-container {
